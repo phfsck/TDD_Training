@@ -4,11 +4,14 @@ import java.util.List;
 
 import tdd.game.armors.Armor;
 import tdd.game.skills.Skill;
+import tdd.game.stats.Stats;
 import tdd.game.weapons.Weapon;
 
 public class Warrior extends Job {
 	private Weapon weapon;
 	private Armor armor;
+	private Stats stats;
+
 	
 	private List<Skill<Job>> skills;
 
@@ -39,5 +42,14 @@ public class Warrior extends Job {
 	public List<Skill<Job>> getSkills() {
 	    return skills;
 	}
+	
+	public void setStats(Stats stats){
+	    this.stats = stats;
+	}
+	
+	public Stats getStats(){
+	    return stats;
+	}
+
 
 }

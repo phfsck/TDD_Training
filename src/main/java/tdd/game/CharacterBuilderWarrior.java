@@ -2,6 +2,7 @@ package tdd.game;
 
 import tdd.game.armors.Armor;
 import tdd.game.jobs.Warrior;
+import tdd.game.stats.Stats;
 import tdd.game.weapons.Weapon;
 
 public class CharacterBuilderWarrior {
@@ -21,9 +22,13 @@ public class CharacterBuilderWarrior {
 		warrior.setArmor(chainMail);
 		return this;
 	}
-
+	public CharacterBuilderWarrior setStats(Stats stats){
+	    warrior.setStats(stats);
+	    return this;
+	}
 	public Warrior build() {
 		return warrior;
 	}
+
 
 }

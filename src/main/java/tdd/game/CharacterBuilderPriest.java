@@ -2,6 +2,7 @@ package tdd.game;
 
 import tdd.game.armors.Armor;
 import tdd.game.jobs.Priest;
+import tdd.game.stats.Stats;
 import tdd.game.weapons.Weapon;
 
 public class CharacterBuilderPriest {
@@ -21,6 +22,11 @@ public class CharacterBuilderPriest {
         priest.setArmor(armor);
         return this;
     }
+    
+	public CharacterBuilderPriest setStats(Stats stats){
+	    priest.setStats(stats);
+	    return this;
+	}
     
     public Priest build() {
         return priest;
